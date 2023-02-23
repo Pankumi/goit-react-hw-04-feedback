@@ -8,7 +8,6 @@ export const Statistics = ({
   total,
   positivePercentage,
 }) => {
-  // console.log('Statistics', this.props);
   return (
     <>
       <p>Good: {good}</p>
@@ -19,8 +18,6 @@ export const Statistics = ({
     </>
   );
 };
-
-// export default Statistics;
 
 Statistics.propTypes = {
   good: PropTypes.number.isRequired,

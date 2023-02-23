@@ -16,10 +16,8 @@ const INITIAL_STATE = {
 export const App = () => {
   const [reviews, setReviews] = useState({ ...INITIAL_STATE });
 
-  // метод для зміни стану при натисканні кнопки - з події достаєтьс натиснута кнопка - відповідний стан + 1
   const countResponse = evt => {
     const buttonClick = evt.target.dataset.name;
-    // console.log('evt >>', evt.target.dataset.name);
     setReviews(prevState => ({
       ...prevState,
       [buttonClick]: prevState[buttonClick] + 1,
